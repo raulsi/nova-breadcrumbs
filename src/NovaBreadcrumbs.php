@@ -2,6 +2,7 @@
 
 namespace ChrisWare\NovaBreadcrumbs;
 
+use Illuminate\Http\Request;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;
 
@@ -36,4 +37,10 @@ class NovaBreadcrumbs extends Tool
 
         return $this;
     }
+
+    public function menu(Request $request)
+    {
+        return [];
+    }
+
 }
